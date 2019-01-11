@@ -1,0 +1,102 @@
+.toggle-mobile-nav
+    width: 69px
+    height: 58px
+    padding: 1.72rem 0
+    align-self: center
+    background: transparent
+.mobilenav
+    position:               absolute
+    top:                    80px
+    // left:                   $space-xs
+    right:                  $space-xs
+    max-width:              350px
+    background-color:       #fff
+    z-index:                2
+    box-shadow:             $subtleboxshadow
+    border-radius:          $preferredradius
+    transform:              scale(.8) translateX(-10%)
+    transform-origin:       top right
+    transition:             all 320ms cubic-bezier(.24,.22,.015,1.56), opacity .1s ease-in-out
+    opacity:                0
+    pointer-events:         none
+    z-index:                10
+    // padding:                4.5rem 0
+    &.is-active
+        width:              350px         
+        opacity:            1
+        pointer-events:     auto
+        transform:          scale(1) translate(0)
+    &::before
+        content:            ''
+        position:           absolute
+        top:                -0.55rem
+        right:               0.75rem
+        width:              0
+        height:             0
+        border-style:       solid
+        border-width:       0 10px 10px 10px
+        border-color:       transparent transparent #fff transparent
+    .nav
+        li
+            a
+                position: relative
+                display:            block
+                padding:            ($space ) 1rem
+                border-bottom:      1px solid rgba(0,0,0,0.1)
+                font-size:          17px
+                font-weight:        $medium
+                font-family:        $headingfont
+
+                svg
+                    width: 25px
+                    height: 25px
+
+                svg
+                    stroke: $primarycolor
+
+            &:nth-of-type(1)
+                svg
+                    fill: $primarycolor
+                    stroke: none
+    .user-nav
+        background: $primarycolor
+        margin-bottom: 0
+        display: flex
+        border-bottom-left-radius: 6px
+        border-bottom-right-radius: 6px
+        .user-nav-item
+            a, button
+                position: relative
+                display:            block
+                padding:            2rem
+                font-size:          17px
+                font-weight:        $medium
+                font-family:        $headingfont
+            button
+                // background: $primarycolor
+                display: flex
+                // width: 150px
+                align-items: center
+                justify-content: center
+                text-align: center
+                border-top: 0
+                border-bottom: 0
+                padding: 2rem 1rem
+                // svg
+                //     stroke: $primarycolor
+                .user-avatar
+                    border: 2px solid white
+            .notification
+                svg
+                    width: 30px
+                span 
+                    position: relative
+                    width: 25px
+                    height: 25px
+                    text-align: center
+                    padding: .3rem
+                    border-radius: 50%
+                    top: -$space
+                    right: 12px
+                    line-height: 1
+                    background: #DB5461

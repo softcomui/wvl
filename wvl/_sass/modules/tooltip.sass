@@ -1,0 +1,59 @@
+[tooltip]
+    // margin: 20px 60px
+    position: relative
+    display: inline
+    outline: 1px solid red
+
+[tooltip]::before 
+    content: ""
+    position: absolute
+    top: -6px
+    left: 50%
+    transform: translateX(-50%)
+    border-width: 4px 6px 0 6px
+    border-style: solid
+    border-color: #fff transparent transparent transparent
+    z-index: 99
+[tooltip]:hover::after,[tooltip]:hover::before 
+    opacity: 1
+.uk-tooltip
+    background-color: #ffffff
+    box-shadow:  2px 1px 10px 3px rgba(0,0,0,0.1)
+    color: #333
+    border-radius: 3px
+    &::before
+        content:            ''
+        position:           absolute
+        bottom:                -0.55rem
+        left:               0.75rem
+        width:              0
+        height:             0
+        border-style:       solid
+        border-width:       0 10px 10px 10px
+        border-color:       transparent transparent  transparent #fff
+
+.tooltip
+    border-radius: 3px
+    &::before
+        content:            ''
+        position:           absolute
+        top:                -0.55rem
+        right:               0.75rem
+        width:              0
+        height:             0
+        border-style:       solid
+        border-width:       0 10px 10px 10px
+        border-color:       transparent transparent #fff transparent
+
+.tooltip-centered
+    border-radius: 3px
+    &::before
+        content:            ''
+        position:           absolute
+        top:                -0.55rem
+        right:               50%
+        width:              0
+        height:             0
+        border-style:       solid
+        border-width:       0 10px 10px 10px
+        border-color:       transparent transparent #fff transparent

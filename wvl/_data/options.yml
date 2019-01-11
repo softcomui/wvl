@@ -1,0 +1,34 @@
+# footer settings
+footernav: 
+  - page: terms and condition
+    slug: /terms-codition/
+  - page: privacy policy
+    slug: /privacy-policy/
+  - page: support
+    slug: /support/
+
+formtableheading:
+  - heading: status
+  - heading: form name
+  - heading: All entries
+  - heading: accepted entries
+  - heading: pending entries
+  - heading: rejected entries
+  - heading: date created
+  - heading: More
+
+agentableheading:
+  - heading: basic info
+  - heading: location
+  - heading: pending
+  - heading: rejected
+  - heading: accepted
+  - heading: total
+  - heading: More
+
+admintableheading:
+  - heading: name
+  - heading: email address
+  - heading: role
+  - heading: status
+  - heading: action

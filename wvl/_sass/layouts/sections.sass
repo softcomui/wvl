@@ -1,0 +1,51 @@
+// 
+    // Sections
+
+    // @package wvl
+    // @author Mustapha Azeezat ''
+
+.absolute-centered
+    width: 100%
+    @media #{ $mediumup }
+        width: 700px
+        margin: 0 auto
+.absolute-centered-w
+    width: 100%
+    @media #{ $largeup }
+        width: 800px
+        margin: 0 auto
+   
+.box-shad-padded
+    width:                  100%
+    box-shadow:             2px 1px 40px 8px rgba(0,0,0,0.1)
+    border-radius:          10px
+    padding:                2.8rem
+    box-sizing:             border-box
+.highlight-box
+    box-shadow:             0px 0px 8px 2px rgba(0,0,0,0.1)
+    border-radius:          6px
+    padding:                2rem 3rem 
+.agent-list-container
+    position: relative
+    height: 100vh
+    .agent-group-highlight
+        margin-top: 3rem
+        position: relative
+        width: 100%
+        .agent-groups
+            width: 15%
+.welcome
+    height: 100vh
+
+    .version
+        margin-top: 5rem
+        color: #333
+        font-size: 16px
+
+    .skip-tour
+        position: absolute
+        bottom: 2rem
+        left: 50%
+        transform: translateX(-50%)
+        @media #{ $slargeup }
+            bottom: 4rem

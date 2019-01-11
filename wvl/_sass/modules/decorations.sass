@@ -1,0 +1,156 @@
+// 
+    // Decorative Elements
+
+    // @package wvl
+    // @author Mustapha Azeezat ''
+
+.border-bottom
+    border-bottom:          $borderline
+.border-bottom-fainted
+    border-bottom:          .5px solid rgba(0, 0, 0, 0.1)
+.border-bottom-round
+    border-bottom-left-radius:  5px
+    border-bottom-right-radius:  5px
+.border-top-round
+    border-top-left-radius:  5px
+    border-top-right-radius:  5px
+.border-left-round
+    border-top-left-radius:  5px
+    border-bottom-left-radius:  5px
+.border-right-round
+    border-top-right-radius:  5px
+    border-bottom-right-radius:  5px
+
+.border-top
+    border-top:          $borderline
+
+.dashed-border
+    background-color:       #ffffff
+    border:                 2px dashed #ddd
+    border-radius:          $preferredradius
+
+.no-border-top
+    border-top:             none
+
+.borderline
+    border:                 1px solid rgba(0,0,0,0.1)
+
+.border-left
+    border-left:            1px solid rgba(0,0,0,0.1)
+
+.border-right
+    border-right:          1px solid rgba(0,0,0,0.1) 
+
+.subtle-shadow
+    box-shadow:             $subtleboxshadow
+.box-shadow
+    box-shadow:             2px 1px 40px 8px rgba(0,0,0,0.1)
+.drop-shadow
+    box-shadow:             $brashboxshadow
+.border-radius
+    border-radius:          $preferredradius
+.small-border-radius
+    border-radius:          2px
+
+.progress-bar
+    position: relative
+    width: 620px
+    left: 40%
+    transform: translateX(-50%)
+    margin-bottom: 4rem
+    .bar
+        position: relative
+        width: 35px
+        height: 35px
+        border-radius: 100%
+        left: 50%
+        transform: translateX(-50%)
+        &.disabled
+            background: #dadada
+            svg
+                display: none
+            
+        &.active
+            background: $primarycolor
+            border: 10px solid #fff
+            box-shadow: 0px 1px 8px 2px rgba(0,0,0,0.1)
+            margin-bottom: 7px
+            svg
+                display: none
+            &:after
+                left: 25px
+
+        &.done
+            border: none
+            background: $primarycolor
+            svg
+                display: block
+                position: relative
+                left: 50%
+                transform: translateX(-50%)
+            &:after
+                background-color: $primarycolor
+    .bar:after
+        content: ""
+        width: 120px
+        height: 2px
+        position: absolute
+        background: #dadada
+        left: 35px
+        top: 50%
+        transform: translatey(-50%)
+    .preview-btn
+        .bar:after
+            width: 0
+            height: 0
+.meter 
+    height: 7px
+    width: 70px
+    position: relative
+    background: #dadada
+    border-radius: 25px
+
+    span 
+        display: block
+        height: 7px
+        border-top-right-radius: 8px
+        border-bottom-right-radius: 8px
+        border-top-left-radius: 20px
+        border-bottom-left-radius: 20px
+        width: 70%
+        background-color: #21BA30
+.meter-alt
+    height: 4px
+    width: 100px
+    position: relative
+    background: rgba(0, 129, 194, 0.2)
+    border-radius: 25px
+
+    span 
+        display: block
+        height: 4px
+        border-top-right-radius: 8px
+        border-bottom-right-radius: 8px
+        border-top-left-radius: 20px
+        border-bottom-left-radius: 20px
+        width: 70%
+        background-color: $primarycolor
+
+.indicator
+    width: 16px
+    height: 11px
+    border-radius: 13px
+.donut-title
+    width: 133px
+    height: 133px
+    border-radius: 50%
+.unequal
+    border-radius: 126px 
+    height: 24px 
+.border-rejected
+    border: 1px solid #DB5461
+.border-accepted
+    border: 1px solid #21BA30
+.border-unequal
+    border-radius: 126px 
+

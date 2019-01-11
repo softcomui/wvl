@@ -1,0 +1,93 @@
+// 
+    // Wrappers for all Layouts
+
+    // @package wvl
+    // @author Mustapha Azeezat ''
+
+.wrapper
+    padding:                    $space-sm $space
+    &.will-grow
+        @media #{ $mediumup }
+            padding-top:        $space-md
+            padding-bottom:     $space-md
+        @media #{ $largeup }
+            padding-top:        $space-lg
+            padding-bottom:     $space-lg
+        @media #{ $xlargeup }
+            padding-top:        $space-xl
+            padding-bottom:     $space-xl
+    &.negate-top
+        padding-top:            0!important
+    &.negate-bottom
+        padding-bottom:         0!important
+    &.negate-x
+        padding-right:          0!important
+        padding-left:           0!important
+    &.negate-top-slaptopup
+        @media #{ $slaptop }
+            padding-top:        0!important
+    &.negate-top-largeup
+        @media #{ $largeup }
+            padding-top:        0!important
+    &.negate-bottom-smallup
+        @media #{ $smallup }
+            padding-bottom:     0!important
+
+.wrapper-y
+    padding-top:        $space-md
+    padding-bottom:     $space-sm 
+    &.will-grow
+        @media #{ $mediumup }
+            padding-top:        $space-md
+            padding-bottom:     $space-md
+        @media #{ $largeup }
+            padding-top:        $space-xl
+            padding-bottom:     $space-xl
+        @media #{ $xlargeup }
+            padding-top:        $space-xl
+            padding-bottom:     $space-xl
+    &.negate-top
+        padding-top:            0!important
+    &.negate-bottom
+        padding-bottom:         0!important
+        
+.wrapper-x
+    padding-right:      $space
+    padding-left:       $space
+    @media #{ $mediumup }
+        padding:        0 $space-sm
+    @media #{ $largeup }
+        padding:        0 ($space-md)
+    @media #{ $xlargeup }
+        padding:        0 ($space-xl * 2)
+.main-wrapper
+    position: relative
+    width: 95%
+    margin: 0 auto
+    box-shadow: 2px 1px 40px 8px rgba(0,0,0,0.1)
+    background: #fff
+    border-radius: 6px
+    // @media #{ $slargeup }
+    //     width: 80%
+    //     // background: #000
+    // @media #{ $xlargeup }
+    //     width: 95%
+.main-section-wrapper
+    padding: 2rem 1.5rem
+    @media #{ $slargeup }
+        padding: 4rem 3rem
+    &.no-px
+        padding: 2rem 0rem
+        @media #{ $slargeup }
+            padding: 4rem 0rem
+    &.no-py
+        padding: 0 1.5rem
+        @media #{ $slargeup }
+            padding: 0 3rem 
+    
+
+
+      
+
+
+

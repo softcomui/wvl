@@ -1,0 +1,269 @@
+// 
+    // Input
+
+    // @package wvl
+    // @author Mustapha Azeezat ''
+
+
+.uk-modal-dialog
+    width: 750px
+.field-rule-link
+    outline: none
+    border: none
+    padding: 0
+.uk-open>.uk-accordion-title::before
+    background-image: url("/uploads/up-arrow.svg")
+.uk-accordion-title::before
+    background-image: url("/uploads/down-arrow.svg")
+.input-wrapper
+    position: relative
+    width: 100%
+    padding: 1rem 1rem
+    input
+        border-radius: 2px
+    label
+        font-size: 16px
+        color: #333333
+    .instruction
+        font-size: 12px
+        font-style: Oblique
+.input-wrapper.active
+    background: #f2f2f2
+    .action-container
+        display: flex
+.action-container
+    position: absolute
+    bottom:   -25px
+    display: none
+    right: 1rem
+    
+.single-line, .email
+    input
+        width: 100%
+
+.name
+    .name-input
+        p
+            width: 48%
+            input
+                width: 100%
+.address
+    .first-line, .second-line
+        width: 100%
+        input
+            width: 100%
+    .state, .zipcode
+        p
+            width: 48%
+            input
+                width: 100%
+.time
+    input
+        width: 50%
+.upload
+    position: relative
+    .input-container
+        position: relative
+        padding: 3rem 1rem
+        input
+            position: absolute
+            width: 70%
+            opacity: 0
+            margin: 0
+            left: 50%
+            transform: translateX(-50%)
+            z-index: 1
+        .icon
+            position: relative
+            width: 100%
+            text-align: center
+.text-input
+    border: 1px solid rgba(0, 0, 0, 0.1)
+    border-radius: 2px
+    padding: 1rem 
+    width: 100%
+    font-size: 1rem
+    outline-color: $primarycolor 
+    text-transform: capitalize
+.text-input-alt
+    border: 1px solid rgba(0, 0, 0, 0.1)
+    border-radius: 2px
+    padding: 1rem 
+    font-size: 1rem
+    margin-right: 0.5rem
+    outline-color: $primarycolor 
+    text-transform: capitalize
+.text-area
+    border: 1px solid rgba(0, 0, 0, 0.1)
+    border-radius: 2px
+    padding: 1rem
+    width: 100%
+    font-size: 1rem
+    outline-color: $primarycolor 
+    text-transform: capitalize
+.select
+    border: 1px solid rgba(0, 0, 0, 0.1)
+    border-radius: 2px
+    padding: 1rem
+    width: 100%
+    font-size: 1rem
+    outline-color: $primarycolor 
+.rating
+    .rate-container
+        .rate
+            position: relative
+            input
+                position: absolute
+                opacity: 0
+                z-index: 1
+            .checkbox:checked ~ .rate-icon
+                svg
+                    fill: $primarycolor
+                    stroke: $primarycolor
+.input-label
+    font-size: 16px
+    font-weight: 500
+    color: #333333
+    font-size: 16px
+    font-family: $headingfont
+    text-transform: capitalize
+    &.small
+        font-size: 14px
+.double-input
+    width: 47%
+    &.geo
+        width: 50%
+.single-input
+    width: 100%
+.required
+    display: none
+    &.active
+        display: inline
+        
+.checkbox-wrapper
+    position: relative
+    width: 16px
+    height: 16px
+    label
+        position: relative
+        width: 100%
+        height: 100%
+        border: 1px solid rgba(0, 0, 0, 0.1)
+        text-align: center
+        z-index: 3
+        svg
+            position: relative
+            top: -7px
+            display: none
+    .checked
+        position: absolute
+        top: 0
+        left: 0
+        opacity: 0
+    .checked:checked + label
+        background: $primarycolor
+        svg
+            display: inline
+        
+.width-small
+    width: 25%
+.width-medium
+    width: 50%
+.width-large
+    width: 100%
+.width-lm
+    width: 80%
+.upload-file
+    position: relative
+    width: 48px
+    height: 100%
+    input
+        position: absolute
+        width: 100%
+        height: 100%
+        opacity: 0
+        left: 0
+        top: 0
+        z-index: 1
+    .icon
+        position: relative
+        width: 100%
+        text-align: center
+
+.color
+    input
+        width: 70px
+        height: 50px
+    label
+        text-transform: uppercase
+        font-size: 12px
+        color: rgba(102, 102, 102, 0.8)
+        margin-left: 10px
+        font-weight: 600
+.form-name
+    // width: 100%
+    // font-size: 1rem
+    text-transform: capitalize
+    // padding: .5rem 
+    font-weight: 500
+    margin-bottom: 2rem
+    color: #333
+    border-bottom: 1px solid rgba(0,0,0,0.1)
+    &:focus
+        border-bottom: 1px solid $primarycolor
+    &::placeholder
+        color: #333
+.form-description
+    width: 100%
+    resize: none
+    background: transparent
+    outline: none
+    border: none
+    border-bottom: 1px solid rgba(0,0,0,0.1)
+    font-size: 1rem
+    padding: .5rem 
+    font-weight: 500
+    margin-bottom: 1rem
+    color: #333
+    text-transform: capitalize
+    &:focus
+        // background: #fff
+        border-bottom: 2px solid $primarycolor
+    &::placeholder
+        color: #333
+   
+.search-input
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    padding: .5em
+    opacity: 0
+    background: #fff
+    pointer-events: none
+
+    .close-btn
+        position: absolute
+        top: 0.5rem
+        right: 0.5rem  
+        svg
+            width: 12px
+            height: 12px  
+    input
+        width: 100%
+        height: 100%
+        font-size: 16px
+        border-bottom: 1px solid $primarycolor
+        &::placeholder
+            color: #666
+            font-size: 16px
+            text-transform: capitalize
+    &.active
+        opacity: 1
+        pointer-events: auto
+
+
+    
+        
+

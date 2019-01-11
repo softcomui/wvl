@@ -1,0 +1,99 @@
+// 
+    // Base
+
+    // @package wvl
+    // @author Mustapha Azeezat ''
+
+html
+    font-size:              $basefont
+
+*, *::before, *::after
+    box-sizing:             border-box
+
+body
+    margin:                 0
+    font-family:            $bodyfont
+    font-weight:            medium
+    line-height:            $defaultlh
+    display:                flex
+    flex-direction:         column
+    height:                 100vh
+    overflow                hidden
+    main
+        flex:               1
+        height:             100vh
+        
+
+
+p
+    margin:                 0
+    // margin-bottom:          $basefont
+    font-size:              $smallfont
+    &:last-of-type:not(:only-of-type)
+        margin-bottom:      0
+
+a, .as-link
+    text-decoration:        none
+    color:                  $primarycolor
+    display:                block
+    transition:             all 0.32s ease-out
+    font-family:            $headingfont
+    font-weight:            $bold
+    &:focus, &:hover
+        text-decoration:    none
+        color:              $primarycolor
+
+audio, canvas, img, video
+    display:                block
+    vertical-align:         middle
+
+img
+
+    max-width:              100%
+    height:                 auto
+    object-fit:             cover
+    
+ul.none
+    padding-left:           0
+    list-style:             none
+
+button
+    border:                 1px solid #fff
+    cursor:                 pointer
+    font-family:            $headingfont
+    font-size:              16px
+    font-weight:            500
+    color:                  #666
+    outline:                none
+    transition:             all 1s ease-in-out
+    box-sizing:             border-box
+    &:hover
+        color:              $primarycolor
+        border:             1px solid rgba(0, 0, 0, 0.1)
+
+label
+    font-family:            $headingfont
+    display:                inline-block
+    
+
+input
+    border: none
+    outline: none
+    background: transparent
+
+select
+    -webkit-appearance: none
+    -moz-appearance: none
+    appearance: none
+    background-color: transparent
+input[type="date"]::-webkit-datetime-edit-month-field
+    color: rgba(102, 102, 102, 0.8)
+input[type="date"]::-webkit-datetime-edit-day-field 
+    color: rgba(102, 102, 102, 0.8)
+input[type="date"]::-webkit-datetime-edit-year-field 
+    color: rgba(102, 102, 102, 0.8)
+input[type="date"]::-webkit-datetime-edit-text
+    color: rgba(102, 102, 102, 0.3)
+    padding: 0 0.3rem
+
+

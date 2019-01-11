@@ -1,0 +1,11 @@
+# Main Navigation
+mainnav: 
+  - page: dashboard
+    slug: /
+  - page: forms
+    slug: /forms/
+  - page: agents
+    slug: /agents/
+  - page: settings
+    slug: /settings/ 
+ 

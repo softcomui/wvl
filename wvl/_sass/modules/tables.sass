@@ -1,0 +1,165 @@
+// 
+    // Tables Elements
+
+    // @package wvl
+    // @author Mustapha Azeezat ''
+
+table 
+    table-layout: fixed
+    width: 100%
+    border-collapse: collapse
+
+    thead
+        background: #F3F7F9
+    tbody
+        tr
+            border: 1px solid rgba(0, 0, 0, 0.1)
+    th
+        padding: 1rem 
+        font-weight: 500
+        font-size: 16px
+        text-align: left
+        
+    th
+        font-size: 16px
+        select
+            padding-right: 0.7rem
+            outline: none
+            border: none
+            font-size: 16px
+            text-transform: capitalize
+            background: url("/uploads/up-down.svg") no-repeat center right
+            background-size: 13%
+    td
+        font-size: 14px
+        padding: 1rem 
+
+.table-wrapper
+    width: 100%
+    overflow-x: scroll 
+.form-table
+    width: 1200px
+    @media #{ $xlargeup }
+        width: 100%
+    
+    .table-header
+        th:nth-child(1)
+            width: 9%
+        th:nth-child(2)
+            width: 17%
+        th:nth-child(3)
+            width: 12%
+        th:nth-child(4), th:nth-child(5), th:nth-child(6), th:nth-child(7)
+            width: 14%
+.expand-agent
+    .uk-modal-dialog
+        width: 97%
+    
+    .table-header
+        th:nth-child(1)
+            text-align: center
+            width: 28%
+        th:nth-child(2), th:nth-child(3), th:nth-child(4), th:nth-child(5), th:nth-child(6), th:nth-child(7)
+            width: 12%
+    .tablebody
+        tr
+            td:nth-child(1)
+                padding-left: 2rem
+                display: flex
+                align-items: center
+.main-agent-table
+    .table-header
+        th:nth-child(1)
+            text-align: center
+            width: 28%
+        th:nth-child(2)
+            width: 17%
+            select
+                padding-right: 0.7rem
+                outline: none
+                border: none
+                font-size: 16px
+                text-transform: capitalize
+                background: url("/uploads/up-down.svg") no-repeat center right
+                background-size: 13%
+
+        th:nth-child(3), th:nth-child(4), th:nth-child(5), th:nth-child(6), th:nth-child(7)
+            width: 11%
+    .tablebody
+        tr
+            td:nth-child(1)
+                padding-left: 2rem
+                display: flex
+                align-items: center    
+            td:nth-child(2) 
+                .agent
+                    margin-left: -5px
+    .paginator-container
+        position: relative
+        margin-top: 2.5rem
+        left: 50%
+        transform: translateX(-50%)
+.entry-table
+    .table-header
+        th:nth-child(1)
+            text-align: center
+            width: 7%
+        th:nth-child(2)
+            width: 20%
+        th:nth-child(3), th:nth-child(4), th:nth-child(5)
+            width: 21% 
+        th:nth-child(6)
+            width: 10%
+    .tablebody
+        tr
+            td:nth-child(1)
+                padding-left: 2rem
+            td:nth-child(2)
+                padding-top: 1.5rem
+                display: flex
+                align-items: center
+                .indicator
+                    width: 10px
+                    height: 10px
+           
+.admin-table
+    .table-header
+        th:nth-child(1)
+            text-align: center
+            width: 7%
+        th:nth-child(2)
+            text-align: left
+            width: 23%
+        th:nth-child(3)
+            width: 22%
+        th:nth-child(4), th:nth-child(5)
+            width: 19%
+        th:nth-child(6)
+            width: 8%  
+    .tablebody
+        tr
+            td:nth-child(1)
+                padding-left: 1.5rem
+            td:nth-child(2)
+                padding-top: 1.5rem
+                padding-left: 0
+                display: flex
+                align-items: center
+.map-table
+    width: 270px
+    position: absolute
+    top: 120px
+    right: 40px
+    border-radius: 6px
+    thead
+        background: #fff
+    tr
+        text-transform: capitalize
+        border: none
+        td
+            padding: 1rem
+    tr:first-of-type
+        background: $platinum
+    tr:last-of-type
+        background: #fff
+    

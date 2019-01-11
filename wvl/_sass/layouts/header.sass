@@ -1,0 +1,70 @@
+// 
+    // Header
+
+    // @package wvl
+    // @author  Mustapha Azeezat <azeezat@softcom.ng>
+    // @version 1.0.0
+
+.header-wrapper
+    position: relative
+    width: 100%
+    height: 100px
+    padding: 0 2.5%
+    .site-branding
+        width: 100%
+        @media #{ $slargeup }
+            width: 100px
+        .logo-holder
+            display: block
+            position: relative
+            left: 50%
+            transform: translateX(-50%)
+            padding: 1.7rem 1rem 1.1rem 1rem
+            svg
+                width: 60px
+                height: 60px
+
+            @media #{ $slargeup }
+                left: 0
+                transform: none
+                padding-left: 0
+        
+    .desktopnav
+        position: relative
+        width: calc(100% - 100px)        
+
+
+.page-header
+    @media #{ $largeup }
+        display: flex
+        justify-content: space-between
+
+    .page-navigation
+        @media #{ $mediumup }
+            display: flex
+.paginator-container
+    width: 100%
+    height: 46px
+    margin-right: 1rem
+    .back-btn, .forward-btn
+        outline: none
+    .back-btn.active, .forward-btn.active
+        svg
+            fill-opacity: 0.6
+    @media #{ $largeup } 
+        width: 202px
+    
+    .add-new-form
+        width: 165px
+        height: 46px
+       
+.search-bar
+    width: 100%
+    height: 48px
+    margin-right: 1rem  
+    @media #{ $largeup } 
+        width: 281px
+    input
+        width: 95%
+.page-nav
+    height: 48px

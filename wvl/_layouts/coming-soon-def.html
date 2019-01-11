@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+    {% include shell/head.html %}
+    <body {% if page.layout %}class="is-{{ page.layout }}"{% endif %}>
+        <a class="skip-link sr  z-depth-1" href="#mainContent">
+            Skip to main content
+        </a>
+        <h1 class="sr">
+            {{ site.title }}
+        </h1>
+        
+        <main class="main" id="mainContent">
+                {{ content }}
+        </main>
+      
+        
+    </body>
+</html>

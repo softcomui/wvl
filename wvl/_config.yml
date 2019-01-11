@@ -1,0 +1,50 @@
+title: WVL
+description: "WVL partners with public and private sector institutions as well as civil society organizations to help drive efficient performance and deliver high impact toward achieving their goals."
+url: ""
+timezone: Africa/Lagos
+language: en
+typekit_id:   buw3vic
+
+# Handling Reading
+charset: 'utf-8'
+
+# Build settings
+markdown: kramdown
+
+# collections
+collections:
+  uploads:
+    title: uploads (Media & Files)
+  
+
+
+# Defaults
+defaults:
+
+
+# pagination
+
+
+# Include folders
+include:
+  - _pages
+
+# Handling Sass
+sass:
+  sass_dir: _sass
+  style: compressed
+
+plugins:
+  - jekyll-feed
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
